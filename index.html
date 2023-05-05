@@ -11,15 +11,14 @@
   src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="website.css">
+   <link rel="stylesheet" href="website.css"> 
 </head>
-
 <body>
     <!-- <div class="topper">
         <div class="container">
             <div class="con">
                 <div class="column">
-                    <img src="logo.png">
+                    <img src="images/logo.png">
                 </div>
                 <nav class="navigation">
                     <div class="column">
@@ -31,14 +30,14 @@
                             <li><a href="#">Terms</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
-                        <img id="menu-btn" src="menu.png">
+                        <img id="menu-btn" src="images/menu.png">
                     </div>
                 </nav>
             </div>
         </div>
     </div> -->
     <nav>
-        <a href="#"><img src="logo.png" alt="not upload">
+        <a href="#"><img src="images/logo.png" alt="not upload">
         </a>
         <div class="navigation">
             <ul>
@@ -49,13 +48,13 @@
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            <img id="menu-btn" src="menu.png">
+            <img id="menu-btn" src="images/menu.png">
         </div>
      </nav>
     <header class="header">
         <div class="container">
             <div class="con">
-                <img src="banner.webp" width="100%">
+                <img src="images/banner.webp" width="100%">
             </div>
             <div class="content">
                 <h5>WE HELP PEOPLE TO TAKE CONTROL OF THEIR HEALTH.</h5>
@@ -82,7 +81,7 @@
                     </div>
                     <div class="box-column">
                         <div class="box-column-1">
-                            <img src="about.webp">
+                            <img src="images/about.webp">
                         </div>
                     </div>
                 </div>
@@ -110,7 +109,7 @@
                                 right product.</p>
                         </div>
                         <div class="image3">
-                            <img src="test-2.jpg" alt="">
+                            <img src="images/test-2.jpg" alt="">
                             <span>
                                 <h3>ALEXANDRA</h3>
                             </span>
@@ -118,7 +117,7 @@
                     </div>
                 </div>
                 <div class="box2-column">
-                    <div class="box-container1">
+                    <div class="box2-container1">
                         <div class="image1">
                             <p>In the beginning i was very confused which is the right product and which one to buy but
                                 health
@@ -129,7 +128,7 @@
                             </p>
                         </div>
                         <div class="image3">
-                            <img src="test-3.jpg" alt="">
+                            <img src="images/test-3.jpg" alt="">
                             <span>
                                 <h3>TYLER</h3>
                             </span>
@@ -146,7 +145,7 @@
                     <div class="box-con">
                         <div class="box-column">
                             <div class="box-column-1">
-                                <img src="logo.png" alt="">
+                                <img src="images/logo.png" alt="">
                                 <p>We at Health sygna are dedicated to improving the lives of those who want to live a
                                     healthier
                                     & happy life Our purpose is to provide highly life researched suggestions to help
@@ -179,14 +178,26 @@
                 </div>
             </div>
         </div>
-        <script>
+        <!-- <script>
+            const hidden=document.getElementsByClassName("menu");
+            const menubtn=document.getElementById("menu-btn");
+            const closebtn=document.getElementById("menu-close");
+            menubtn.onclick=function(){
+            // $('nav .navigation ul.menu').
+               hidden.style.display="block";
+            }
+            closebtn.onclick=function(){
+            // $('nav .navigation ul.menu').style.display="none";
+            hidden.style.display="none";
+            }
+        </script> -->
+        <script>     
             $('#menu-btn').click(function(){
-            $('nav .navigation ul').addClass('active')
-            });
-            $('#menu-close').click(function(){
-            $('nav .navigation ul').removeClass('active')
-            });
-            </script>
+                   $('nav .navigation ul').addClass('menu')
+                   });
+                   $('#menu-close').click(function(){
+                   $('nav .navigation ul').removeClass('menu')
+                   });
+               </script>
 </body>
-
 </html>
